@@ -6,7 +6,7 @@
 
 Name:           rust-%{crate}
 Version:        1.0.64
-Release:        1
+Release:        2
 Summary:        Parser for Rust source code
 
 # Upstream license specification: MIT OR Apache-2.0
