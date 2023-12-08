@@ -5,8 +5,8 @@
 %global crate syn
 
 Name:           rust-%{crate}
-Version:        1.0.64
-Release:        2
+Version:        2.0.39
+Release:        1
 Summary:        Parser for Rust source code
 
 # Upstream license specification: MIT OR Apache-2.0
