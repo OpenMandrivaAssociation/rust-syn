@@ -5,7 +5,7 @@
 %global crate syn
 
 Name:           rust-%{crate}
-Version:        2.0.39
+Version:        2.0.72
 Release:        1
 Summary:        Parser for Rust source code
 
