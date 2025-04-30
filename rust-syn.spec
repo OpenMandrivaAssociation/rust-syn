@@ -8,7 +8,7 @@
 %global crate syn
 
 Name:           rust-syn
-Version:        2.0.72
+Version:        2.0.101
 Release:        1
 Summary:        Parser for Rust source code
 Group:          Development/Rust
@@ -20,8 +20,8 @@ Source:         %{crates_source}
 ExclusiveArch:  %{rust_arches}
 
 BuildRequires:  cargo-rpm-macros >= 24
-BuildRequires:  (crate(proc-macro2) >= 1.0.83 with crate(proc-macro2) < 2.0.0~)
-BuildRequires:  (crate(proc-macro2/proc-macro) >= 1.0.83 with crate(proc-macro2/proc-macro) < 2.0.0~)
+BuildRequires:  (crate(proc-macro2) >= 1.0.91 with crate(proc-macro2) < 2.0.0~)
+BuildRequires:  (crate(proc-macro2/proc-macro) >= 1.0.91 with crate(proc-macro2/proc-macro) < 2.0.0~)
 BuildRequires:  (crate(quote) >= 1.0.35 with crate(quote) < 2.0.0~)
 BuildRequires:  (crate(quote/proc-macro) >= 1.0.35 with crate(quote/proc-macro) < 2.0.0~)
 BuildRequires:  (crate(unicode-ident/default) >= 1.0.0 with crate(unicode-ident/default) < 2.0.0~)
@@ -51,8 +51,8 @@ Parser for Rust source code.}
 Summary:        %{summary}
 Group:          Development/Rust
 BuildArch:      noarch
-Provides:       crate(syn) = 2.0.72
-Requires:       (crate(proc-macro2) >= 1.0.83 with crate(proc-macro2) < 2.0.0~)
+Provides:       crate(syn) = 2.0.101
+Requires:       (crate(proc-macro2) >= 1.0.91 with crate(proc-macro2) < 2.0.0~)
 Requires:       (crate(unicode-ident/default) >= 1.0.0 with crate(unicode-ident/default) < 2.0.0~)
 Requires:       cargo
 Requires:       rust >= 1.61
@@ -72,14 +72,14 @@ use the "%{crate}" crate.
 Summary:        %{summary}
 Group:          Development/Rust
 BuildArch:      noarch
-Provides:       crate(syn/default) = 2.0.72
+Provides:       crate(syn/default) = 2.0.101
 Requires:       cargo
-Requires:       crate(syn) = 2.0.72
-Requires:       crate(syn/clone-impls) = 2.0.72
-Requires:       crate(syn/derive) = 2.0.72
-Requires:       crate(syn/parsing) = 2.0.72
-Requires:       crate(syn/printing) = 2.0.72
-Requires:       crate(syn/proc-macro) = 2.0.72
+Requires:       crate(syn) = 2.0.101
+Requires:       crate(syn/clone-impls) = 2.0.101
+Requires:       crate(syn/derive) = 2.0.101
+Requires:       crate(syn/parsing) = 2.0.101
+Requires:       crate(syn/printing) = 2.0.101
+Requires:       crate(syn/proc-macro) = 2.0.101
 
 %description -n %{name}+default-devel %{_description}
 
@@ -93,9 +93,9 @@ use the "default" feature of the "%{crate}" crate.
 Summary:        %{summary}
 Group:          Development/Rust
 BuildArch:      noarch
-Provides:       crate(syn/clone-impls) = 2.0.72
+Provides:       crate(syn/clone-impls) = 2.0.101
 Requires:       cargo
-Requires:       crate(syn) = 2.0.72
+Requires:       crate(syn) = 2.0.101
 
 %description -n %{name}+clone-impls-devel %{_description}
 
@@ -109,9 +109,9 @@ use the "clone-impls" feature of the "%{crate}" crate.
 Summary:        %{summary}
 Group:          Development/Rust
 BuildArch:      noarch
-Provides:       crate(syn/derive) = 2.0.72
+Provides:       crate(syn/derive) = 2.0.101
 Requires:       cargo
-Requires:       crate(syn) = 2.0.72
+Requires:       crate(syn) = 2.0.101
 
 %description -n %{name}+derive-devel %{_description}
 
@@ -125,9 +125,9 @@ use the "derive" feature of the "%{crate}" crate.
 Summary:        %{summary}
 Group:          Development/Rust
 BuildArch:      noarch
-Provides:       crate(syn/extra-traits) = 2.0.72
+Provides:       crate(syn/extra-traits) = 2.0.101
 Requires:       cargo
-Requires:       crate(syn) = 2.0.72
+Requires:       crate(syn) = 2.0.101
 
 %description -n %{name}+extra-traits-devel %{_description}
 
@@ -141,9 +141,9 @@ use the "extra-traits" feature of the "%{crate}" crate.
 Summary:        %{summary}
 Group:          Development/Rust
 BuildArch:      noarch
-Provides:       crate(syn/fold) = 2.0.72
+Provides:       crate(syn/fold) = 2.0.101
 Requires:       cargo
-Requires:       crate(syn) = 2.0.72
+Requires:       crate(syn) = 2.0.101
 
 %description -n %{name}+fold-devel %{_description}
 
@@ -157,9 +157,9 @@ use the "fold" feature of the "%{crate}" crate.
 Summary:        %{summary}
 Group:          Development/Rust
 BuildArch:      noarch
-Provides:       crate(syn/full) = 2.0.72
+Provides:       crate(syn/full) = 2.0.101
 Requires:       cargo
-Requires:       crate(syn) = 2.0.72
+Requires:       crate(syn) = 2.0.101
 
 %description -n %{name}+full-devel %{_description}
 
@@ -173,9 +173,9 @@ use the "full" feature of the "%{crate}" crate.
 Summary:        %{summary}
 Group:          Development/Rust
 BuildArch:      noarch
-Provides:       crate(syn/parsing) = 2.0.72
+Provides:       crate(syn/parsing) = 2.0.101
 Requires:       cargo
-Requires:       crate(syn) = 2.0.72
+Requires:       crate(syn) = 2.0.101
 
 %description -n %{name}+parsing-devel %{_description}
 
@@ -189,10 +189,10 @@ use the "parsing" feature of the "%{crate}" crate.
 Summary:        %{summary}
 Group:          Development/Rust
 BuildArch:      noarch
-Provides:       crate(syn/printing) = 2.0.72
+Provides:       crate(syn/printing) = 2.0.101
 Requires:       (crate(quote) >= 1.0.35 with crate(quote) < 2.0.0~)
 Requires:       cargo
-Requires:       crate(syn) = 2.0.72
+Requires:       crate(syn) = 2.0.101
 
 %description -n %{name}+printing-devel %{_description}
 
@@ -206,12 +206,12 @@ use the "printing" feature of the "%{crate}" crate.
 Summary:        %{summary}
 Group:          Development/Rust
 BuildArch:      noarch
-Provides:       crate(syn/proc-macro) = 2.0.72
-Requires:       (crate(proc-macro2/proc-macro) >= 1.0.83 with crate(proc-macro2/proc-macro) < 2.0.0~)
+Provides:       crate(syn/proc-macro) = 2.0.101
+Requires:       (crate(proc-macro2/proc-macro) >= 1.0.91 with crate(proc-macro2/proc-macro) < 2.0.0~)
 Requires:       (crate(quote) >= 1.0.35 with crate(quote) < 2.0.0~)
 Requires:       (crate(quote/proc-macro) >= 1.0.35 with crate(quote/proc-macro) < 2.0.0~)
 Requires:       cargo
-Requires:       crate(syn) = 2.0.72
+Requires:       crate(syn) = 2.0.101
 
 %description -n %{name}+proc-macro-devel %{_description}
 
@@ -225,9 +225,9 @@ use the "proc-macro" feature of the "%{crate}" crate.
 Summary:        %{summary}
 Group:          Development/Rust
 BuildArch:      noarch
-Provides:       crate(syn/test) = 2.0.72
+Provides:       crate(syn/test) = 2.0.101
 Requires:       cargo
-Requires:       crate(syn) = 2.0.72
+Requires:       crate(syn) = 2.0.101
 
 %description -n %{name}+test-devel %{_description}
 
@@ -241,9 +241,9 @@ use the "test" feature of the "%{crate}" crate.
 Summary:        %{summary}
 Group:          Development/Rust
 BuildArch:      noarch
-Provides:       crate(syn/visit) = 2.0.72
+Provides:       crate(syn/visit) = 2.0.101
 Requires:       cargo
-Requires:       crate(syn) = 2.0.72
+Requires:       crate(syn) = 2.0.101
 
 %description -n %{name}+visit-devel %{_description}
 
@@ -257,9 +257,9 @@ use the "visit" feature of the "%{crate}" crate.
 Summary:        %{summary}
 Group:          Development/Rust
 BuildArch:      noarch
-Provides:       crate(syn/visit-mut) = 2.0.72
+Provides:       crate(syn/visit-mut) = 2.0.101
 Requires:       cargo
-Requires:       crate(syn) = 2.0.72
+Requires:       crate(syn) = 2.0.101
 
 %description -n %{name}+visit-mut-devel %{_description}
 
