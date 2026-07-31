@@ -8,7 +8,7 @@
 %global crate syn
 
 Name:           rust-syn
-Version:        2.0.101
+Version:        3.0.3
 Release:        1
 Summary:        Parser for Rust source code
 Group:          Development/Rust
